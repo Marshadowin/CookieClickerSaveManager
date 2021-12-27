@@ -5,5 +5,7 @@ mkdir "%savename%"
 echo should look like cookies\resources\app\
 echo to run save click src then index.html
 SET /P _inputname= Please enter an File directory for the save manager.:
-xcopy /e /c /q /h "%_inputname%" "%savename%"
+xcopy /Y /e /c /q /h "%_inputname%" "%savename%"
 echo go to the src folder of "%savename%"
+echo done
+pause
